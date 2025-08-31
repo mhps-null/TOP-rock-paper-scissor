@@ -82,4 +82,13 @@ span {
     html {
         font-size: 8px;
     }
+
+    .option,
+    img {
+        width: 25vw;
+    }
+
+    .option>button {
+        font-size: 5vw;
+    }
 }
