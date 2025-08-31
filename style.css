@@ -77,3 +77,9 @@ span {
     background-color: rebeccapurple;
     padding: 2rem 0;
 }
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+}
