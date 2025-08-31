@@ -4,10 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock paper Scissors game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./">
+    <title>Rock paper Scissor game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: black;">
+<body>
+    <div class="header-container">ROCK PAPER SCISSOR GAME!</div>
+    <div class="content-container">
+        <div class="option-container">
+            <div class="option"><button onclick="playRound(1)"><img src="./resources/rock.png">
+                    <p>Rock</p>
+                </button></div>
+            <div class="option"><button onclick="playRound(2)"><img src="./resources/paper.png">
+                    <p>Paper</p>
+                </button></div>
+            <div class="option"><button onclick="playRound(3)"><img src="./resources/scissor.png">
+                    <p>Scissor</p>
+                </button></div>
+        </div>
+        <div class="exit"><button onclick="playRound(4)">Exit</button></div>
+        <div class="score">
+            Your Score: <span id="HScore">0</span>
+        </div>
+        <div class="score">
+            Bot Score: <span id="CScore">0</span>
+        </div>
+        <div class="result">Result: <span id='result'>YOU HAVE NOT PLAYED YET</span></div>
+    </div>
+    <div class="footer-container">Copyright &copy; mhps-null github 2025</div>
+
     <script src="./script.js"></script>
 </body>
 
